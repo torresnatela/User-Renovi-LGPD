@@ -43,8 +43,8 @@ export default async function ExclusaoDeConta({ searchParams }: PageProps) {
           <h1 className="text-xl font-bold text-gray-900">Excluir minha conta</h1>
           <p className="text-sm text-gray-600 leading-relaxed">
             Este é o canal oficial da <strong>Renovi Saúde</strong> (desenvolvedor:{' '}
-            <strong>[RAZÃO SOCIAL LEGAL]</strong>) para solicitar a exclusão da sua conta e dos
-            dados pessoais associados.
+            <strong>Renovi Soluções em Tecnologia e Serviços SA</strong>) para solicitar a exclusão
+            da sua conta e dos dados pessoais associados.
           </p>
           <p className="text-sm text-gray-600 leading-relaxed">
             Após confirmarmos sua identidade, seus dados serão excluídos em até{' '}
