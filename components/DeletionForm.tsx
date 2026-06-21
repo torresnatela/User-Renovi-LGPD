@@ -38,6 +38,7 @@ export function DeletionForm({ source }: DeletionFormProps) {
     defaultValues: {
       deletionScope: 'full_account',
       source,
+      turnstileToken: '',
     },
   });
 
