@@ -49,6 +49,12 @@ export const dsrRequests = pgTable('dsr_requests', {
   completedAt: timestamp('completed_at', { withTimezone: true }),
 });
 
+export const rateLimitLog = pgTable('rate_limit_log', {
+  id: uuid('id').defaultRandom().primaryKey(),
+  key: varchar('key', { length: 500 }).notNull(),
+  requestedAt: timestamp('requested_at', { withTimezone: true }).notNull().defaultNow(),
+});
+
 export const dsrStatusHistory = pgTable('dsr_status_history', {
   id: uuid('id').defaultRandom().primaryKey(),
   requestId: uuid('request_id')
