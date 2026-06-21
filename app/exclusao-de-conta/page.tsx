@@ -51,7 +51,7 @@ export default async function ExclusaoDeConta({ searchParams }: PageProps) {
             <strong>15 dias úteis</strong>. Por exigência legal, alguns dados podem ser retidos
             pelos prazos previstos em lei.{' '}
             <a
-              href="https://renovisaude.com.br/politica-privacidade"
+              href="https://renovisaude.com.br/politica-de-privacidade-e-protecao-de-dados-pessoais/"
               className="text-red-600 underline hover:text-red-700"
             >
               Saiba mais na nossa Política de Privacidade
