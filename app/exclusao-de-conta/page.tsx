@@ -1,4 +1,5 @@
 import { Suspense } from 'react';
+import Image from 'next/image';
 import { InfoAccordion } from '@/components/InfoAccordion';
 import { DeletionFormWrapper } from './DeletionFormWrapper';
 
@@ -19,12 +20,17 @@ export default async function ExclusaoDeConta({ searchParams }: PageProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       {!isApp && (
-        <header className="bg-white border-b border-gray-200 px-4 py-4">
+        <header className="bg-white border-b border-gray-200 px-4 py-3">
           <div className="max-w-lg mx-auto flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
-              <span className="text-white font-bold text-sm">R</span>
-            </div>
-            <span className="font-semibold text-gray-800">Renovi Saúde</span>
+            <Image
+              src="/logo-icon.png"
+              alt="Renovi Saúde"
+              width={32}
+              height={32}
+              className="flex-shrink-0"
+              priority
+            />
+            <span className="font-semibold text-[#0d1560]">Renovi Saúde</span>
             <span className="text-gray-300">·</span>
             <span className="text-sm text-gray-500">Central de Privacidade</span>
           </div>
